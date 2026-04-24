@@ -1,0 +1,5 @@
+-r base.txt
+
+-e file:../django-settings-class#egg=django_settings
+
+-e file:../laces-components#egg=components

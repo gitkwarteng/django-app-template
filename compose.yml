@@ -1,0 +1,17 @@
+services:
+  django:
+    environment:
+      DJANGO_SETTINGS_MODULE: ${DJANGO_SETTINGS_MODULE:-main.settings.prod}
+    build: .
+    image: django-image
+    container_name: django-app
+    restart: always
+    expose:
+      - "8000"
+    volumes:
+      - .:/opt/app:rw
+    network_mode: "host"
+
+networks:
+  app_network:
+    driver: bridge

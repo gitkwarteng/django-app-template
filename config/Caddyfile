@@ -1,0 +1,6 @@
+{$DOMAIN:localhost} {
+
+    reverse_proxy
+
+    file_server
+}
