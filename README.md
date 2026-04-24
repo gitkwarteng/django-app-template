@@ -1,4 +1,4 @@
-# Route Planner API with Fuel Optimization
+# Django Project
 
 Django API that calculates optimal fuel stops along a route based on fuel prices.
 
